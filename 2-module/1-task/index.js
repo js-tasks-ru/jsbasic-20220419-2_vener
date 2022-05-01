@@ -4,13 +4,14 @@ let salaries = {
   Pete: 1300,
   month: 'December',
   currency: 'USD',
-  isPayed: false
+  isPayed: false,
 }
-let sum = 0;
+
 
 function sumSalary(salaries) {
+  let sum = 0;
 	for (let key in salaries) {
-    if( typeof salaries[key] === 'number') {
+    if( Number.isInteger(salaries[key])) {
       sum += salaries[key];
     } 
   }  return sum;

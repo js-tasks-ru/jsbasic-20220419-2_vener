@@ -1,9 +1,10 @@
 let calculator = {
-  a: 10,
-  b: 5,
-	read (){
-    this.a = +prompt('Введите значение a:', '');
-    this.b = +prompt('Введите значение b:', '');
+    a: 0,
+    b: 0,
+
+	read ( a, b){
+    this.a = Number(a);
+    this.b = Number(b);
     
   },
   sum (){
